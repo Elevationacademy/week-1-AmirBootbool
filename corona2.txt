@@ -1,1 +1,2 @@
-this is the 2nd corona file, text adding from git bash
+this is the 2nd corona file
+this is another change to local file
