@@ -1,0 +1,128 @@
+/* use padding to create a right angle from two boxes */
+/* .shape1{
+width: 30px;
+height: 30px;
+background-color: red;
+border: 1px black;
+padding-top: 40px;
+}
+.shape2{
+width: 30px;
+height: 30px;
+color: blue;
+background-color: blue;
+border: 1px black;
+/* margin-top: 50px; */
+/* padding-left: 60px;
+
+} */ 
+
+/* trying different position commands and definitions */
+/* .box1{ */
+    /* width: 100px;
+    height: 100px; */
+    /* sets the color of the shape  */
+    /* background-color: royalblue; */
+
+    /* shrinks the inner shape  */
+    /* margin: 50px; */
+
+    /* moves down- away from top by x pixel */
+    /* margin-top: 100px; */
+
+    /* laying some more material arround- padding the shape in x pixel width */
+    /* padding: 30px; }*/
+
+
+/* inheritance of shapes */
+
+/* #parent { */
+    /* as a block element -without dimentions  take the width of the whole block and height of childern */
+    /* width: 100px;
+    height: 100px; */
+
+    /* this in line frees the parent from the children */
+    /* display: inline-block;
+
+    background-color: red; */
+    /* parent will move all children */
+    /* margin-top: 50px; */
+
+    /* padding: 10px;
+    position: relative;
+}
+
+#child1 { */
+    /* effects the next child to be in same horizontal line */
+    /* display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: royalblue; */
+    /* will move parent and brother if on his way- or only parent- if parent is not inline  */
+    /* margin-top: 50px; */
+
+    /* first we must make sure parent is pos' absolute or relative */
+    /* Absolute elements are taken out of the normal flow of the elements on the page. */
+    /* other elements ignore absolute elements. */
+
+
+    /* position: absolute; */
+
+    /* snaps to right corner of parent */
+    /* right: 0; */
+}
+
+/* #child2 { */
+    /* effects the next child to be in same horizontal line */
+    /* display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: seagreen; */
+    /* if path us clear- moves only itself */
+    /* margin-top: 50px; */
+    /* padding: 10px; */
+    /* margin: 10px; */
+
+/* moving the shape relative to the original position - will overlayy other children
+rest of shapes will not move*/
+    /* position: relative; */
+
+    /* now it "pushs" from the direction given- only itself */
+    /* left: 20px;
+    bottom: 30px;
+} */ 
+
+/* 4 color corners with absolute pos.  */
+#parent{
+	background-color: red;
+	width: 300px;
+	height: 300px;
+  position: relative;
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+  position: absolute;
+}
+
+#child1 {
+    background-color: blue;
+}
+
+#child2{
+  right: 0;
+	background-color: green;
+}
+
+#child3 {
+  bottom: 0;
+  background-color: gold;
+}
+
+#child4 {
+  bottom : 0;
+  right: 0;
+  background-color: purple;
+}
+
