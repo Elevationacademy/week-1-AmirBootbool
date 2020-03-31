@@ -1,0 +1,50 @@
+
+div1 {
+  position: relative;
+    width: 75px;
+    background-color: palegreen;
+    padding: 30px;
+    margin: 2px;
+    border: black;
+    border-width: 10px;
+
+    
+}
+div2 {
+  width: 75px;
+    background-color: salmon;
+    padding: 30px;
+    margin: 2px;
+    border: black;
+    border-width: 5px;
+
+}
+
+#container {
+  position: relative;  
+  width: 154px;
+  height: 100px;
+  top: 50px;  
+}
+
+div {
+  width: 145px;
+  height: 20px;
+  border: black;
+  
+
+}
+input {
+  width: 150px;
+}
+age {
+  width: 150px;
+}
+name {
+  width: 150px;
+}
+button {
+  position: relative;
+  margin-left: 160px;
+  bottom: 21px;
+}

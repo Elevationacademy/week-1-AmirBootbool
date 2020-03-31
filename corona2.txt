@@ -1,0 +1,1 @@
+this is the 2nd corona file, text adding from git bash
