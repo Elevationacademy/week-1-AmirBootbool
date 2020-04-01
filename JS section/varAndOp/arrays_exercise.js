@@ -6,13 +6,13 @@
 //  at the end of the strand.
 // 4. add the gene "FXT" to the beginning of the strand
 
-const genes = ["ACADM", "GLMN", "RLF", "AZIN2", "CRYZ"]
-const heal = []
-heal.push("ACADM", "GLMN")
-heal.push("CRYZ", "AZIN2", "RLF")
-heal.splice(3,1)
-heal.splice(heal.length,0,"AZIN2", "AZIN2")
-heal.unshift("FXT")
+// const genes = ["ACADM", "GLMN", "RLF", "AZIN2", "CRYZ"]
+// const heal = []
+// heal.push("ACADM", "GLMN")
+// heal.push("CRYZ", "AZIN2", "RLF")
+// heal.splice(3,1)
+// heal.splice(heal.length,0,"AZIN2", "AZIN2")
+// heal.unshift("FXT")
 
-console.log(heal)
+// console.log(heal)
 

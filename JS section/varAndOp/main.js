@@ -126,15 +126,44 @@
 //  at the end of the strand.
 // 4. add the gene "FXT" to the beginning of the strand
 
-const genes = ["ACADM", "GLMN", "RLF", "AZIN2", "CRYZ"]
-const heal = []
-heal.push("ACADM", "GLMN")
-heal.push("CRYZ", "AZIN2", "RLF")
-heal.splice(3,1)
-heal.splice(heal.length,0,"AZIN2", "AZIN2")
-heal.unshift("FXT")
+// const genes = ["ACADM", "GLMN", "RLF", "AZIN2", "CRYZ"]
+// const heal = []
+// heal.push("ACADM", "GLMN")
+// heal.push("CRYZ", "AZIN2", "RLF")
+// heal.splice(3,1)
+// heal.splice(heal.length,0,"AZIN2", "AZIN2")
+// heal.unshift("FXT")
 
-console.log(heal)
+// console.log(heal)
 
+// Objects
+
+// dict1 = {"name":"apoo", color:"green"}
+// brother = dict1["name"]
+// console.log("do you know " + brother +" he is my brother!")
+
+// object with an array inside
+// const bag = {
+//     weight: 10,
+//     owner: "Larissa",
+//     items: ["Pen", "Bottle", "Book"]
+//   }
+//   zen = bag.items[0]
+//   console.log(zen)
+
+
+
+dict = {
+    item:"brca1",
+    toBeginning: true,
+    items:[1,2,3,4]
+}
+
+ if (dict.toBeginning){
+     dict["items"].unshift(dict.item)
+ } else {
+     dict["items"].push(dict.item)
+ }
+ console.log(dict)
 
 
