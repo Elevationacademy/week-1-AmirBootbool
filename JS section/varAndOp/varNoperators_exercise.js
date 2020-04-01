@@ -43,7 +43,7 @@ console.log(!("knife" === "sword")) // true
 console.log((1 < 2) || (-1 > -1) || !false) // true
 
 
-"" // can be used as false
+"" // can be used as falsy item
 
 
 (31 % 5) == "1" // true
@@ -60,12 +60,8 @@ console.log((1 < 2) || (-1 > -1) || !false) // true
 
 (undefined || null) // false
 
-Exercise 6
-Bit of a mind-twister: what are the values of a, b, and c in the end?
+// Exercise 6
 
-
-
-COPY
 let a = 3
 a = 4
 let c = 0
@@ -75,5 +71,7 @@ a = b
 b = c
 c = a
 a = b
+
+// with pen and paper: 0, 0, 2
 
 
