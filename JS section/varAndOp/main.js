@@ -239,3 +239,7 @@
 // myList.push(library.book)
 // console.log(library.book , "was pushed to myList, and the result is: ", myList)
 
+for(let companyIndex in companies){
+    console.log(companyIndex)
+  }
+
