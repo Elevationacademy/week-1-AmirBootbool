@@ -152,18 +152,90 @@
 //   console.log(zen)
 
 
+// Spot check objects
 
-dict = {
-    item:"brca1",
-    toBeginning: true,
-    items:[1,2,3,4]
-}
+// dict = {
+//     item:"brca1",
+//     toBeginning: true,
+//     items:[1,2,3,4]
+// }
 
- if (dict.toBeginning){
-     dict["items"].unshift(dict.item)
- } else {
-     dict["items"].push(dict.item)
- }
- console.log(dict)
+//  if (dict.toBeginning){
+//      dict["items"].unshift(dict.item)
+//  } else {
+//      dict["items"].push(dict.item)
+//  }
+//  console.log(dict)
 
+// spot check
+
+// const human = {
+//     age: 0
+// }
+// const babyNameKey = "name"
+// const babyNameValue = "Goojibear"
+
+// human.name = "Goojibear"
+// console.log(human)
+// Write some code that gives human the key-value pair 
+// of name: "Goojibear", using the variables above.
+
+
+// type refrences
+
+// let person = {
+//     firstName: "Dopple",
+//     lastName: "Ganger"
+//   }
+  
+//   let p = person  // now both are pointing at the same object
+//   p.firstName= "Chappy"  // updating the object pointed by both
+  
+//   console.log(p)
+//   console.log(person)
+
+// ex 1
+
+// const p1 = {
+//     name: "dod",
+//     age: 20,
+//     city:"bon"
+// }
+
+// const p2 = {
+//     name: "ron",
+//     age: 20,
+//     city: "york"
+// }
+
+// if (p1.age === p2.age){
+//     if (p1.city === p2.city){
+//         console.log("Jill wanted to date Robert")
+//     } else {
+//         console.log("Jill wanted to date Robert, but couldn't")
+//     }
+// }
+
+
+// Exercise 2
+
+// const myList = [{ size : "big", color : "blue" }, { size : "medium", color : "black" }]
+// console.log("array before actions: ", [{ size : "big", color : "blue" }, { size : "medium", color : "black" }])
+// myList[0].color = "green"
+// myList.splice(1,1)
+// console.log("array after actions: ", myList)
+
+// hisList = [{ size : "xtra", color : "rosie" }, { size : "biggy", color : "crema" }]
+// myList.push(...hisList)
+// console.log("myList after changes ", myList, "the added list ", hisList)
+
+// // Exercise 4
+
+// const library = { 
+//      book:[{title: "Starship Troopers",author: "robert heinlein"},
+//            {title: "Foundation", author: "Aisaac Asimov"}, 
+//            {title: "Ring-World", author: "Larry Niven"}]}
+
+// myList.push(library.book)
+// console.log(library.book , "was pushed to myList, and the result is: ", myList)
 
