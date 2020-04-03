@@ -81,35 +81,33 @@
 // console.log(reservations)
 
 // Exercise 5.2
-const reservations = {
-    bob: { claimed: false },
-    ted: { claimed: true }
-  }
-const name = prompt('Please enter the name for your reservation').toLowerCase()
+// const reservations = {
+//     bob: { claimed: false },
+//     ted: { claimed: true }
+//   }
+// const name = prompt('Please enter the name for your reservation').toLowerCase()
 
-if (name in reservations) {
-    if (reservations[name].claimed){
-        alert("Welcome Mr "+name+" your place is saved for you")
-    } else {
-        alert("sorry Mr "+ name+" your table has been taken")
-    }
-} else {
-    reservations[name]= {claimed:true}
-}
-console.log(reservations)
+// if (name in reservations) {
+//     if (reservations[name].claimed){
+//         alert("Welcome Mr "+name+" your place is saved for you")
+//     } else {
+//         alert("sorry Mr "+ name+" your table has been taken")
+//     }
+// } else {
+//     reservations[name]= {claimed:true}
+// }
+// console.log(reservations)
 
 // Extensions
 
-// Given these two variables:
-
-// const date = 3
+const date = 3
 
 const kitchen = {
     owner: "Geraldine",
-    hasOven: true/false,   // choose one STATE
+    hasOven: false,   // choose one STATE
     fridge: {
         price: 500,
-        works: true/false,   // choose one STATE
+        works: false,   // choose one STATE
         items: [
             { name: "cheese", expiryDate: 7 },
             { name: "raddish", expiryDate: 2 },
@@ -117,29 +115,27 @@ const kitchen = {
         ]
     }
 }
+
 const hasOven = kitchen.hasOven
+const isWorking = kitchen.fridge.works
+let cheeseX = kitchen.fridge.items[0].expiryDate
+let raddishX = kitchen.fridge.items[1].expiryDate
+let breadX = kitchen.fridge.items[2].expiryDate
+let priceX = ((kitchen.fridge.price)/2)
 
-if(hasOven && ){
 
-// hasOven: true and works: true
+if(hasOven === true && isWorking === false){
+    console.log(`Geraldine's raddish expired ${date-raddishX} day ago. Weird, considering her fridge works. Luckily, she has an oven to cook the raddish in.`)
+} 
+else if (hasOven === false && isWorking === true){
+    console.log(`Geraldine's raddish expired ${date-raddishX} day ago. Weird, considering her fridge works. Too bad she doesn't have an oven to cook the raddish in.`)
+} 
+else if (hasOven === true && !isWorking === false){
+    console.log(`Geraldine's raddish expired ${date-raddishX} day ago. Probably because her fridge doesn't work. Luckily, she has an oven to cook the raddish in. And she'll have to pay ${priceX} to fix the fridge.`)
+} 
+else if (hasOven === false && isWorking === false){
+    console.log(`Geraldine's raddish expired ${date-raddishX} day ago. Probably because her fridge doesn't work. Too bad she doesn't have an oven to cook the raddish in. And she'll have to pay ${priceX} to fix the fridge.`)
+}
 
-// Geraldine's raddish expired 1 day ago. Weird, considering her fridge works. Luckily, she has an oven to cook the raddish in.
-
-// hasOven: false and works: true
-// Geraldine's raddish expired 1 day ago. Weird, considering her fridge works. Too bad she doesn't have an oven to cook the raddish in.
-// hasOven: true and works: false
-// Geraldine's raddish expired 1 day ago. Probably because her fridge doesn't work. Luckily, she has an oven to cook the raddish in. And she'll have to pay 250 to fix the fridge.
-// hasOven: false and works: false
-// Geraldine's raddish expired 1 day ago. Probably because her fridge doesn't work. Too bad she doesn't have an oven to cook the raddish in. And she'll have to pay 250 to fix the fridge.
-
-// Note that the expired 1 day ago should be calculated based off the date variable and expiryDate property.
-
-// Also, she'll have to pay 250 to fix the fridge should be calculated based off the priceproperty in fridge - it should be half the price.
-
-// Make sure to only use information from the variables you've been given. 
-
-// Do not write out "raddish". Instead, use kitchen.fridge.items...
-
-// Hint: Use helper variables to make your life easier. For instance:
 
 
