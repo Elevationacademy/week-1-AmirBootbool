@@ -94,59 +94,62 @@
 
 // Exercise 7
 
-const names = ["Ashley", "Donovan", "Lucas"]
-const ages = [23, 47, 18]
-const people = []
+// const names = ["Ashley", "Donovan", "Lucas"]
+// const ages = [23, 47, 18]
+// const people = []
 
-let i = 0
-for (name of names){
-    temp = {}
-    temp["name"] = name
-    temp["age"] = ages[i]   // must use [] notation to set a new string key 
-    people.push(temp)
-    i++
-}
-console.log(people)
+// let i = 0
+// for (name of names){
+//     temp = {}
+//     temp["name"] = name
+//     temp["age"] = ages[i]   // must use [] notation to set a new string key, dot notation will not work 
+//     people.push(temp)
+//     i++
+// }
+// console.log(people)
 
-
-// Challenging- will get to it later, till Ill catch up with calss
 
 // Exercise 8
-// Based off the people array from before, write a loop that prints out "Ashley is 23 years old", "Donovan is 47 years old", etc.
 
+// const names = ["Ashley", "Donovan", "Lucas"]
+// const ages = [23, 47, 18]
+// const people = []
 
+// let i = 0
+// for (name of names){
+//     temp = {}
+//     temp["name"] = name
+//     temp["age"] = ages[i]   // must use [] notation to set a new string key, dot notation will not work 
+//     people.push(temp)
+//     i++
+// }
+// for (let item of people){
+//     console.log(`${item["name"]} is ${item["age"]} years old`)
+// }
 
-// Again, consider which loop is most appropriate.
-
-
-
-// Note that this is different from Exercise 1 ;)
-
-// Challenging
 // Exercise 9
-// ==≡== The following exercises are a little more challenging - but this is a good chance to practice your programmer's mind. ==≡==
+
+// array of objects with id and text properties
+
+const posts = [
+  {id: 1, text: "Love this product"},
+  {id: 2, text: "This is the worst. DON'T BUY!"},
+  {id: 3, text: "So glad I found this. Bought four already!"}
+]
+console.log("posts before: ", posts)
+const posts2 = [...posts]
+console.log("posts2 before: ", posts2)
 
 
-
-// Given this array:
-
-
-
-// COPY
-// const posts = [
-//   {id: 1, text: "Love this product"},
-//   {id: 2, text: "This is the worst. DON'T BUY!"},
-//   {id: 3, text: "So glad I found this. Bought four already!"}
-// ]
+for (let entry of posts2){
+    if (entry.id <= 2){
+        console.log(entry.id)
+        delete posts2[posts2.indexOf(entry)]
+    }
+}
+console.log(posts2, posts)
 
 
-// Write some code that removes the post with an id of 2 from the posts array. Can't have any negative reviews of our product!
-
-
-
-// Obviously, do not do posts.splice(1, 1) - you have to find the post to remove! (Of course, you will use splice - just not hard coded!)
-
-// Challenging
 // Exercise 10
 // Given this array:
 

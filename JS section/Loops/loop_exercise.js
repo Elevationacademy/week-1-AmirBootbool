@@ -94,22 +94,20 @@
 
 // Exercise 7
 
-const names = ["Ashley", "Donovan", "Lucas"]
-const ages = [23, 47, 18]
-const people = []
+// const names = ["Ashley", "Donovan", "Lucas"]
+// const ages = [23, 47, 18]
+// const people = []
 
-let i = 0
-for (name of names){
-    temp = {}
-    temp["name"] = name
-    temp["age"] = ages[i]   // must use [] notation to set a new string key 
-    people.push(temp)
-    i++
-}
-console.log(people)
+// let i = 0
+// for (name of names){
+//     temp = {}
+//     temp["name"] = name
+//     temp["age"] = ages[i]   // must use [] notation to set a new string key 
+//     people.push(temp)
+//     i++
+// }
+// console.log(people)
 
-
-// Challenging- will get to it later, till Ill catch up with calss
 
 // Exercise 8
 // Based off the people array from before, write a loop that prints out "Ashley is 23 years old", "Donovan is 47 years old", etc.
