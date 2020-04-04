@@ -187,16 +187,25 @@
 //     }
 // console.log("arrays before and after removal: ", posts, posts2)
 
+// Exercise 11
 
-Challenging
-Extension
-// There is something called Object.keys - READ!!
-// Given the object below:
-// const dictionary = {
-//   "A": ["Aardvark", "Abacus", "Actually", "Atomic"],
-//   "B": ["Banana", "Bonkers", "Brain", "Bump"],
-//   "C": ["Callous", "Chain", "Coil", "Czech"]
-// }
+
+const dictionary = {
+  "A": ["Aardvark", "Abacus", "Actually", "Atomic"],
+  "B": ["Banana", "Bonkers", "Brain", "Bump"],
+  "C": ["Callous", "Chain", "Coil", "Czech"]
+}
+
+let keyList = Object.keys(dictionary) // returns into keyList all dict keys as an array
+
+let i = 0
+for (keyList[i] in dictionary){
+  console.log(`Words that starts with ${keyList[i]}`)
+  for (let item of dictionary[keyList[i]] ){
+  console.log("\t",item)
+  i++}
+}
+
 
 // Words that begin with  A:
 //     Aardvark
@@ -236,4 +245,4 @@ Extension
 //   // keep going for another 20 minutes
 // }
 
-// // celebrate
+// 
