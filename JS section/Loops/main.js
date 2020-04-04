@@ -151,45 +151,45 @@
 
 // Exercise 10
 
-const posts = [
-  {
-    id: 1, 
-    text: "Love this product",
-    comments: []
-  },
-  { 
-    id: 2, 
-    text: "This is the worst. DON'T BUY!", 
-    comments: [
-                {id: 1, text: "Idiot has no idea"}, 
-                {id: 2, text:"Fool!"}, 
-                {id: 3, text: "I agree!"}
-              ]
-   },
-   {
-    id: 3, 
-    text: "So glad I found this. Bought four already!",
-    comments: []
-   }
-]
-let posts2 = [...posts]
-for (let entry of posts2){
-    if (entry.id === 2){
-        console.log(entry.comments)
-        for (let item of entry.comments){
-            if (item.id === 3){
-                index = entry.comments.indexOf(item)
-                delete entry.comments(indexedDB)
-            }
-            }
-        }
-    }
+// const posts = [
+//   {
+//     id: 1, 
+//     text: "Love this product",
+//     comments: []
+//   },
+//   { 
+//     id: 2, 
+//     text: "This is the worst. DON'T BUY!", 
+//     comments: [
+//                 {id: 1, text: "Idiot has no idea"}, 
+//                 {id: 2, text:"Fool!"}, 
+//                 {id: 3, text: "I agree!"}
+//               ]
+//    },
+//    {
+//     id: 3, 
+//     text: "So glad I found this. Bought four already!",
+//     comments: []
+//    }
+// ]
+// let posts2 = [...posts]
 
-console.log(posts2)
-// You are given 2 as the ID of a post. Write some code that finds the comment with an ID of 3 (inside of a post with an ID of 2), and remove just that one comment.
+// for (let entry of posts2){
+//     if (entry.id === 2){
+//         for (let item of entry.comments){
+//             if (item.id === 3){
+//                 index = entry.comments.indexOf(item)
+//                 let list = entry.comments
+//                 list.splice(index,1)
+//             }
+//             }
+//         }
+//     }
+// console.log("arrays before and after removal: ", posts, posts2)
 
-// Challenging
-// Extension
+
+Challenging
+Extension
 // There is something called Object.keys - READ!!
 // Given the object below:
 // const dictionary = {
