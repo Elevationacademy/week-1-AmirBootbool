@@ -1,0 +1,255 @@
+/*  four children on 4 corners */
+
+/* .parent{
+    width: 400px;
+	height: 400px;
+    background-color: red;
+    position: relative;
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+    position: absolute;
+}
+
+#child1 {
+    background-color: blue;
+}
+
+#child2{
+  right: 0;
+	background-color: green;
+}
+
+#child3 {
+  bottom: 0;
+  background-color: gold;
+}
+
+#child4 {
+  bottom : 0;
+  right: 0;
+  background-color: purple;
+} */
+
+/*     ########## TEMPLATE ########## 
+        styling for Basic Boxes  */
+
+/* .parent {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(61, 18, 216);
+}
+
+.child {
+  
+}
+
+.child-one {
+    background-color: rgb(245, 16, 16);
+    width: 20px;
+    height: 500px;
+    position: absolute;
+    left: 50px
+    
+}
+
+.child-two {
+    position: absolute;
+    top: 80px;
+    background-color: rgb(245, 16, 16);
+    width: 500px;
+    height: 20px;
+} */
+/* 
+.child-three {
+  background-color: rgb(255, 116, 232);
+} */
+
+
+/* CSS exercises */
+
+/* A present */
+
+/* .parent {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(61, 18, 216);
+}
+
+.child {
+  
+}
+
+.child-one {
+    background-color: rgb(245, 16, 16);
+    width: 20px;
+    height: 500px;
+    position: absolute;
+    left: 50px
+    
+}
+
+.child-two {
+    position: absolute;
+    top: 80px;
+    background-color: rgb(245, 16, 16);
+    width: 500px;
+    height: 20px;
+} */
+/* 
+
+/* A graph chart */
+/* 
+.parent {
+    position: relative;
+    height: 220px;
+    width: 330px;
+    border-radius: 5px;
+    background-color: rgb(115, 80, 241);
+}
+.header1{
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+.header2{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-weight: bold;
+    font-size: large;
+} */
+/* .child {
+    position: absolute; 
+    background-color: grey;
+    bottom: 0px
+}
+
+.child1 {
+    width: 20px;
+    height: 44px;
+    left: 20px
+}
+
+.child2{
+    height: 92px;
+    width: 20px;
+    left: 60px
+} */
+
+/* .child3 {
+    height: 200px;
+    width: 20px;
+    left: 100px  
+}
+
+.child4 {    
+    height: 180px;
+    width: 20px;
+    left: 140px   
+}
+
+.child5 {
+    height: 160px;
+    width: 20px;
+    left: 180px
+}
+
+.child6 {
+    height: 60px;
+    width: 20px;
+    left: 220px
+} */
+
+
+/* magnet styling   */
+.shape {
+    background-color: red;
+    border-radius: 80px;
+}
+    .midBox{
+        position: absolute;
+        height: 100px;
+        width: 250px;
+        bottom: 200px;
+        border-radius: 0px 0px 10px 10px;
+
+        background-color: white;
+
+        left: 150px;
+        bottom: 200px;
+        z-index: 1;
+}
+  
+  /* left pole */
+  .shape1 {
+    position: absolute;
+    height: 400px;
+    width: 100px;
+    border-radius: 10px/30px 20px 0px 10px;
+    background: red;
+    left: 50px;
+
+  }
+
+/* bottom connector */
+  .shape2 {
+    position: absolute;
+
+    height: 100px;
+    width: 260px;
+    border-radius: 0px 0px 0px 0px;
+    bottom: 112px;
+    left: 145px;
+  }
+  /* right pole */
+  .shape3 {
+    position: absolute;
+
+    height: 400px;
+    width: 100px;
+    border-radius: 10px/30px 20px 10px 0px;
+    background: red;
+    left: 400px;
+
+}
+
+  body, html {
+    height: 100%;
+  }
+  body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+   /* left pole top */
+   .leftTop {
+    position: absolute;
+
+    height: 40px;
+    width: 100px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(176, 171, 171);
+    left: 50px;
+    top: 120px;
+
+}
+   /* right pole top */
+   .rightTop {
+    position: absolute;
+
+    height: 40px;
+    width: 100px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(176, 171, 171);
+    left: 400px;
+    top: 120px;
+
+}

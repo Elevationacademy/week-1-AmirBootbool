@@ -131,79 +131,73 @@
 
 // array of objects with id and text properties
 
-const posts = [
-  {id: 1, text: "Love this product"},
-  {id: 2, text: "This is the worst. DON'T BUY!"},
-  {id: 3, text: "So glad I found this. Bought four already!"}
-]
-console.log("posts before: ", posts)
-const posts2 = [...posts]
-console.log("posts2 before: ", posts2)
+// const posts = [
+//   {id: 1, text: "Love this product"},
+//   {id: 2, text: "This is the worst. DON'T BUY!"},
+//   {id: 3, text: "So glad I found this. Bought four already!"}
+// ]
+// console.log("posts before: ", posts)
+// const posts2 = [...posts]
+// console.log("posts2 before: ", posts2)
 
 
-for (let entry of posts2){
-    if (entry.id <= 2){
-        console.log(entry.id)
-        delete posts2[posts2.indexOf(entry)]
-    }
-}
-console.log(posts2, posts)
-
+// for (let entry of posts2){
+//     if (entry.id <= 2){
+//         console.log(entry.id)
+//         delete posts2[posts2.indexOf(entry)]
+//     }
+// }
+// console.log(posts2, posts)
 
 // Exercise 10
-// Given this array:
 
+const posts = [
+  {
+    id: 1, 
+    text: "Love this product",
+    comments: []
+  },
+  { 
+    id: 2, 
+    text: "This is the worst. DON'T BUY!", 
+    comments: [
+                {id: 1, text: "Idiot has no idea"}, 
+                {id: 2, text:"Fool!"}, 
+                {id: 3, text: "I agree!"}
+              ]
+   },
+   {
+    id: 3, 
+    text: "So glad I found this. Bought four already!",
+    comments: []
+   }
+]
+let posts2 = [...posts]
+for (let entry of posts2){
+    if (entry.id === 2){
+        console.log(entry.comments)
+        for (let item of entry.comments){
+            if (item.id === 3){
+                index = entry.comments.indexOf(item)
+                delete entry.comments(indexedDB)
+            }
+            }
+        }
+    }
 
-
-// COPY
-// const posts = [
-//   {
-//     id: 1, 
-//     text: "Love this product",
-//     comments: []
-//   },
-//   { 
-//     id: 2, 
-//     text: "This is the worst. DON'T BUY!", 
-//     comments: [
-//                 {id: 1, text: "Idiot has no idea"}, 
-//                 {id: 2, text:"Fool!"}, 
-//                 {id: 3, text: "I agree!"}
-//               ]
-//    },
-//    {
-//     id: 3, 
-//     text: "So glad I found this. Bought four already!",
-//     comments: []
-//    }
-// ]
-
-
+console.log(posts2)
 // You are given 2 as the ID of a post. Write some code that finds the comment with an ID of 3 (inside of a post with an ID of 2), and remove just that one comment.
 
 // Challenging
 // Extension
-// There is something called Object.keys - read about this, and then do the following exercise:
-
-
-
+// There is something called Object.keys - READ!!
 // Given the object below:
-
-
-
-// COPY
 // const dictionary = {
 //   "A": ["Aardvark", "Abacus", "Actually", "Atomic"],
 //   "B": ["Banana", "Bonkers", "Brain", "Bump"],
 //   "C": ["Callous", "Chain", "Coil", "Czech"]
 // }
 
-
-// Write some code that prints out the following:
-
-
-
-// COPY
 // Words that begin with  A:
 //     Aardvark
 //     Abacus
