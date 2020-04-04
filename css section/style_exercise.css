@@ -168,7 +168,7 @@
 
 
 /* magnet styling   */
-.shape {
+/* .shape {
     background-color: red;
     border-radius: 80px;
 }
@@ -179,46 +179,46 @@
         bottom: 200px;
         border-radius: 0px 0px 10px 10px;
 
-        background-color: white;
+        background-color: white; */
 
-        left: 150px;
+        /* left: 150px;
         bottom: 200px;
         z-index: 1;
 }
   
   /* left pole */
-  .shape1 {
+  /* .shape1 {
     position: absolute;
     height: 400px;
     width: 100px;
     border-radius: 10px/30px 20px 0px 10px;
     background: red;
-    left: 50px;
+    left: 50px; */
 
-  }
+  /* }  */
 
 /* bottom connector */
-  .shape2 {
-    position: absolute;
+  /* .shape2 {
+    position: absolute; */
 
-    height: 100px;
+    /* height: 100px;
     width: 260px;
     border-radius: 0px 0px 0px 0px;
     bottom: 112px;
     left: 145px;
-  }
+  /* } */
   /* right pole */
-  .shape3 {
+  /* .shape3 {
     position: absolute;
 
     height: 400px;
     width: 100px;
     border-radius: 10px/30px 20px 10px 0px;
     background: red;
-    left: 400px;
-
-}
-
+    left: 400px; */ 
+/* 
+/* } */
+/* 
   body, html {
     height: 100%;
   }
@@ -227,10 +227,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  } 
-  
+  /* }  */
+   
    /* left pole top */
-   .leftTop {
+   /* .leftTop {
     position: absolute;
 
     height: 40px;
@@ -240,9 +240,9 @@
     left: 50px;
     top: 120px;
 
-}
+} */
    /* right pole top */
-   .rightTop {
+   /* .rightTop {
     position: absolute;
 
     height: 40px;
@@ -252,4 +252,88 @@
     left: 400px;
     top: 120px;
 
+} */
+
+
+
+/* <!-- The "Choclate flight" --> */
+/* 
+ 
+.parent {
+
+    position: relative;
+    height: 205px;
+    width: 385px;
+
+    background-color: rgb(5, 2, 19);
 }
+
+.child {
+    background-color: #66320E;
+}
+
+.child1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 5px;
+    top: 5px;
+}
+
+.child2{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    left: 5px;
+    bottom: 5px;
+} 
+
+.child3 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    left: 100px;
+    top: 5px;  
+}
+
+.child4 {  
+    position: absolute;  
+    height: 90px;
+    width: 90px;
+    left: 100px;
+    bottom: 5px;   
+}
+
+.child5 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    left: 195px;
+    top: 5px;
+}
+
+.child6 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    left: 195px;
+    bottom: 5px;
+}
+
+.child7 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    left: 290px;
+    top: 5px;
+}
+
+.line {
+    position: absolute;
+    height: 5px;
+    width: 385px;
+    left: 0px;
+    top: 100px;
+
+    background-color: darkred;
+} */
